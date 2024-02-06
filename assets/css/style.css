@@ -4,20 +4,20 @@
 }
 
 .topbar {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   padding: 5px;
-  background-color: black;
+  background-color: rgb(33, 16, 46);
   color: aqua;
   font-size: 150%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   justify-content: space-between;
-  
+
 }
 
 .languagebar {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -30,21 +30,53 @@
 }
 
 .underbar {
-height: 50px;
-background-color: rgb(100, 0, 182);
+  height: 70px;
+  background-color: rgb(100, 0, 182);
+  text-align: center;
 }
 
-.home, .muurdecoratie, .doosjes, .opbergers, .stools, .gadgets{
-  background-color: rgb(100, 0, 182);
+.home,
+.muurdecoratie,
+.doos,
+.opbergers,
+.stools,
+.gadgets {
+  background-color: rgb(90, 0, 164);
   color: antiquewhite;
   padding: 15px 12px;
-  text-align: center;
+  text-align: right;
   display: inline-block;
   font-size: 16px;
   margin: 12px 12px;
   cursor: pointer;
   border: none;
+
 }
 
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 700px;
+  background-color: rgb(42, 17, 62);
+  text-align: center;
+}
 
-
+.doosjes,
+.filter,
+.prijs,
+.recent,
+.nieuwsbrief,
+.vergelijken {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(90, 0, 164);
+  color: antiquewhite;
+  padding: 15px 12px;
+  text-align: center;
+  font-size: 16px;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
