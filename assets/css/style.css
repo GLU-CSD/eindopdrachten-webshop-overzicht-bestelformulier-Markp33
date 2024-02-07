@@ -50,33 +50,114 @@
   margin: 12px 12px;
   cursor: pointer;
   border: none;
-
 }
 
 .maincontent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
   padding: 20px;
   box-sizing: border-box;
-  height: 700px;
   background-color: rgb(42, 17, 62);
-  text-align: center;
+  width: 300px;
+  height: 600px;
+  overflow-x: hidden;
+  float: left;
 }
 
-.doosjes,
-.filter,
-.prijs,
-.recent,
-.nieuwsbrief,
-.vergelijken {
-  width: 100px;
-  height: 100px;
+.kleindoosje {
+  width: auto;
   background-color: rgb(90, 0, 164);
   color: antiquewhite;
   padding: 15px 12px;
-  text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   margin: 12px 0;
   box-sizing: border-box;
+  border-bottom: solid;
 }
+
+ul {
+  list-style-position: inside;
+}
+
+
+
+
+
+.main {
+  display: grid;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-columns: 350px 350px 350px;
+  float: top;
+  margin: 20px;
+  gap: 10px;  
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.box {
+  background: #444;
+  border: 10px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+  }
+
+.square {
+  width: 320px;
+  height: 220px;
+  border: solid;
+  border-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: center;
+
+}
+
+
+
+
+/* Slider start */
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 25px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/* Slide end( slide from w3) */
