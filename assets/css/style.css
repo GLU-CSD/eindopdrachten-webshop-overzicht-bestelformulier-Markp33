@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: monospace;
 }
 
 .topbar {
@@ -12,7 +13,6 @@
   font-size: 150%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   justify-content: space-between;
-
 }
 
 .languagebar {
@@ -31,6 +31,7 @@
 
 .underbar {
   height: 70px;
+  width: 100%;
   background-color: rgb(100, 0, 182);
   text-align: center;
 }
@@ -52,13 +53,48 @@
   border: none;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #555;
+
+  width: 100%;
+  height: 250px;
+
+  margin-top: 90px;
+}
+
+.veiligbetalen {
+  color: antiquewhite;
+  padding-left: 80px;
+  padding-top: 40px;
+  
+}
+
+.leveringkosten {
+  color: antiquewhite;
+  padding-top: 40px;
+}
+
+.klantenservice {
+  color: antiquewhite;
+  padding-top: 40px;
+}
+
+.overons {
+  color: antiquewhite;
+  padding-right: 80px;
+  padding-top: 40px;
+}
+
 .maincontent {
   display: block;
   padding: 20px;
   box-sizing: border-box;
   background-color: rgb(42, 17, 62);
   width: 300px;
-  height: 600px;
+  height: 1500px;
   overflow-x: hidden;
   float: left;
 }
@@ -88,45 +124,46 @@ ul {
   grid-template-columns: 350px 350px 350px;
   float: top;
   margin: 20px;
-  gap: 10px;  
-}
-
-
-body {
-  display: flex;
+  gap: 10px;
+  margin-top: -50px;
   justify-content: center;
-  margin: 20px;
 }
 
 .utopbar {
-  font-size: 20px;
-  height: 30px;
-  width: 1000px;
   border-bottom: solid;
-  
+padding: 20px;
+
 }
 
+.doo{
 
+  font-size: 50px;
+}
 
-.cdtext{
+.image{
+  width: 320px;
+  height: 200px;
+}
+.cdtext {
   position: absolute;
   margin-top: 200px;
   font-size: 30px;
   margin-right: 180px;
+
 }
 
-.recentblock{
+.recentblock {
   margin-top: 5px;
 }
 
-.prijs1{
+.prijs1 {
   text-decoration: line-through;
 }
 
 
 
 
-.prijs{
+.prijs {
   position: absolute;
   margin-top: 260px;
   font-size: 15px;
@@ -134,7 +171,7 @@ body {
   text-decoration: line-through;
 }
 
-.korting{
+.korting {
   position: absolute;
   margin-top: 300px;
   font-size: 20px;
@@ -142,7 +179,7 @@ body {
 }
 
 .box {
-  background: #444;
+  background: #828282;
   border: 10px solid #555;
   display: flex;
   align-items: center;
@@ -150,7 +187,7 @@ body {
   color: #AAA;
   margin-top: 70px;
   height: 375px;
-  }
+}
 
 .square {
   width: 320px;
@@ -161,8 +198,45 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 100px;
-  float: center;  
+  float: center;
 }
+
+
+.mainhome{
+  background-color: #555;
+  height: 100vh;
+  width: 100%;
+}
+
+.hometext1{
+  font-size: 20px;
+  
+  color: antiquewhite;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 200px;
+  
+}
+
+.hometext1border{
+  border-radius: 50px;
+  background-color: #828282;
+  padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
