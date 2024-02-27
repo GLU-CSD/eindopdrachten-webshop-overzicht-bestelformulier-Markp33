@@ -3,6 +3,33 @@
   margin: 0;
   font-family: monospace;
 }
+/*Bestelformulier*/
+.bestelformulier{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.type{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.aanhef{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.block1{
+width: 350px;
+}
+.block2{
+  width: 350px;
+}
+
 
 /*header begin*/
 
