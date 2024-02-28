@@ -3,32 +3,59 @@
   margin: 0;
   font-family: monospace;
 }
+
 /*Bestelformulier*/
-.bestelformulier{
+.bestelformulier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
   padding-top: 50px;
   text-align: center;
+  width: 100%;
+  height: auto;
+
+  gap: 20px;
 }
 
-.type{
-  padding-top: 50px;
+
+
+.block1 {
+  width: 50px;
+}
+
+.block2 {
+  width: 50px;
+}
+
+.block3 {
+  width: 50px;
+}
+
+.block4 {
+  width: 50px;
+}
+
+.block5 {
+  width: 50px;
+}
+
+.block6 {
+  width: 50px;
+}
+
+.main1 {
+  width: auto;
+  height: 100vh;
+
+  padding-left: 300px;
+}
+
+form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
 }
-.aanhef{
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-}
-.block1{
-width: 350px;
-}
-.block2{
-  width: 350px;
-}
+
 
 
 /*header begin*/
