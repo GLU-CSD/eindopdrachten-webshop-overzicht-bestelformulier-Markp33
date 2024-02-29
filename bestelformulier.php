@@ -157,16 +157,20 @@
         </div>
         <!-- mainboxes -->
         <div class="main1">
-            <div class="bestelformulier">
-                <div class="bhead"><h3>Bestelformulier</h3></div>
-                <div class="type">
-                    <div class="block1"></div>
-                    <form action="">
-                        Type bestelling:
-                        <label><input type="radio" name="type_bestelling"> Particulier</label>
-                        <label><input type="radio" name="type_bestelling"> Zakelijk</label>
-                    </form>
-                    <div class="block1"></div>
+    <div class="bestelformulier">
+        <div class="bhead">
+            <h3>Bestelformulier</h3>
+        </div>
+        <div class="type">
+            <div class="block1"></div>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                Type bestelling:
+                <label><input type="radio" name="type_bestelling"> Particulier</label>
+                <label><input type="radio" name="type_bestelling"> Zakelijk</label>
+                <span class="error">* <?php echo $type_bestellingErr; ?></span>
+            </form>
+            <div class="block1"></div>
+        </div>
                 </div>
                 <div class="aanhef">
                     <div class="block2"></div>
@@ -178,35 +182,11 @@
 
                 </div>
 
-                <div class="name">
+                
 
 
-                    <form action="">
-                        Naam:
-                        <input type="text" id="fname" name="fname" value="" placeholder="Name"><br>
-                        <input type="text" id="lname" name="lname" value="" placeholder="Tussenvoegsel"><br><br>
-                        <input type="text" id="lname" name="lname" value="" placeholder="Last name"><br><br><br>
-
-                    </form>
-                    <div class="block3"></div>
-
-                </div>
-
-
-                <div class="postcode">
-                    <form action="">
-                        Postcode:
-                        <input type="text" id="fname" name="fname" value="" placeholder="1234AB"><br>
-                    </form>
-                    <div class="block4"></div>
-                </div>
-                <div class="huisnummer">
-                    <form action="">
-                        Huisnummer:
-                        <input type="text" id="fname" name="fname" value="" placeholder="Nr."><br>
-                        <input type="text" id="fname" name="fname" value="" placeholder="Toev."><br>
-                    </form>
-                </div>
+                
+                
                 <div class="land">Land: Nederland
                     <div class="block5"></div>
                 </div>
@@ -217,68 +197,224 @@
                         <label><input type="radio" name="adres"> Op ander adres bezorgen</label>
                         <div class="block6"></div>
                 </div>
-                <div class="email">
+               
+               
+              
+                <div class="verzendwijze">
                     <form action="">
-                        E-mailadres:
-                        <input type="text" id="fname" name="fname" value="" placeholder=""><br>
+                        Verzendwijze factuur:
+                        <label><input type="radio" name="verzendwijze"> Factuur per e-mail</label>
+                        <label><input type="radio" name="verzendwijze"> Factuur geprint bij de bestelling</label>
+                        <div class="block6"></div>
                 </div>
-                <div class="telefoonnr">
-                    <form action="">
-                        Telefoonnummer:
-                        <input type="text" id="fname" name="fname" value="" placeholder=""><br>
+                <div class="nieuwsbrief">
+                    <input type="checkbox" id="nieuwsbrief" name="nieuw" value="nieuw">
+                    <label for="vehicle1"> Ja, ik wil de Gopnik-nieuwsbrief met €5,- cadeaubon voor mijn volgende
+                        bestelling</label><br>
                 </div>
-                <div class="geboortedatum">
-                    <form action="">
-                        Geboortedatum:
-                        <input type="text" id="fname" name="fname" value="" placeholder="dd-mm-jjjj"><br>
-                </div>
-                <div class="verzendwijze"></div>
-                <div class="nieuwsbrief"></div>
-                <div class="kleur"></div>
-                <div class="bewaar"></div>
-                <div class="wachtwoord"></div>
-                <div class="verderknop"></div>
-                <input type="submit" value="Submit">
+                
+                     
+                        
+                        <input type="submit" value="Submit">
 
+                </div>
             </div>
         </div>
+
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+
+        <?php
+
+
+
+
+?>
+
+<?php
+$type_bestellingErr = $aanhefErr = $fnameErr = $postcodeErr = $huisnummerErr = $adresErr = $emailErr = $tellieErr = $gbdErr = $verzendwijzeErr = $nieuwErr = $wachtwoordErr = $bevestigErr = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Placeholder validation for demonstration purposes
+
+    // Check Type bestelling
+    if (empty($_POST["type_bestelling"])) {
+        $type_bestellingErr = "Type bestelling is required";
+    }
+
+    // Check Aanhef
+    if (empty($_POST["aanhef"])) {
+        $aanhefErr = "Aanhef is required";
+    }
+
+    // Check Name
+    if (empty($_POST["fname"])) {
+        $fnameErr = "Name is required";
+    }
+
+    // Check Postcode
+    if (empty($_POST["postcode"])) {
+        $postcodeErr = "Postcode is required";
+    }
+
+    // Check Huisnummer
+    if (empty($_POST["huisnummer"])) {
+        $huisnummerErr = "Huisnummer is required";
+    }
+
+    // Check Adres
+    if (empty($_POST["adres"])) {
+        $adresErr = "Adres is required";
+    }
+
+    // Check Email
+    if (empty($_POST["email"])) {
+        $emailErr = "Email is required";
+    }
+
+    // Check Telefoonnummer
+    if (empty($_POST["tellie"])) {
+        $tellieErr = "Telefoonnummer is required";
+    }
+
+    // Check Geboortedatum
+    if (empty($_POST["gbd"])) {
+        $gbdErr = "Geboortedatum is required";
+    }
+
+    // Check Verzendwijze
+    if (empty($_POST["verzendwijze"])) {
+        $verzendwijzeErr = "Verzendwijze is required";
+    }
+
+    // Check Nieuw
+    if (empty($_POST["nieuw"])) {
+        $nieuwErr = "Nieuw is required";
+    }
+
+    // Check if passwords match
+    if ($_POST["wachtwoord"] !== $_POST["bevestig"]) {
+        $wachtwoordErr = "Wachtwoorden komen niet overeen";
+    }
+
+    // Add more validation and processing logic as needed
+}
+?>
+
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+    <br>
+
+    
+    <br>
+
+    <div>
+        Name: <input type="text" name="fname">
+        <span class="error">* <?php echo $fnameErr;?></span>
     </div>
+    <br>
+
+    <div>
+        Postcode: <input type="text" name="postcode">
+        <span class="error">* <?php echo $postcodeErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Huisnummer: <input type="text" name="huisnummer">
+        <span class="error">* <?php echo $huisnummerErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Adres: <input type="text" name="adres">
+        <span class="error">* <?php echo $adresErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        E-mail: <input type="text" name="email">
+        <span class="error">* <?php echo $emailErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Telefoonnummer: <input type="text" name="tellie">
+        <span class="error">* <?php echo $tellieErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Geboortedatum: <input type="text" name="gbd">
+        <span class="error">* <?php echo $gbdErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Verzendwijze: <input type="text" name="verzendwijze">
+        <span class="error">* <?php echo $verzendwijzeErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Nieuw: <input type="text" name="nieuw">
+        <span class="error">* <?php echo $nieuwErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Wachtwoord: <input type="password" name="wachtwoord">
+        <span class="error">* <?php echo $wachtwoordErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        Bevestig Wachtwoord: <input type="password" name="bevestig">
+        <span class="error">* <?php echo $bevestigErr;?></span>
+    </div>
+    <br>
+
+    <div>
+        <input type="submit" name="submit" value="Submit">
+    </div>
+</form>
 
 
-    <!-- footer -->
+
+        <!-- footer -->
 
 
-    <footer>
-        <div class="info">
-            <div class="veiligbetalen">
-                <h2>VEILIG BETALEN</h2>
-                <li>Betaal in alle veiligheid</li>
-                <div>met onze partners</div>
+        <footer>
+            <div class="info">
+                <div class="veiligbetalen">
+                    <h2>VEILIG BETALEN</h2>
+                    <li>Betaal in alle veiligheid</li>
+                    <div>met onze partners</div>
+                </div>
+                <div class="leveringkosten">
+                    <h2>LEVERING KOSTEN</h2>
+                    <li>Transport tarieven</li>
+                </div>
+                <div class="klantenservice">
+                    <h2>KLANTENSERVICE</h2>
+                    <li>Paswoord vergeten</li>
+                    <li>Veilige betaling</li>
+                    <li>Levering</li>
+                    <li>Annuleren, retourneren en</li>
+                    <div>ruilen</div>
+                </div>
+                <div class="overons">
+                    <h2>OVER ONS</h2>
+                    <li>Over ons</li>
+                    <li>Contactinformatie</li>
+                    <li>Algemene voorwaarden</li>
+                    <li>Privacy beleid</li>
+                </div>
             </div>
-            <div class="leveringkosten">
-                <h2>LEVERING KOSTEN</h2>
-                <li>Transport tarieven</li>
+            <div class="copyright">
+                © 1999-2024 supergopnik.com b.v.
             </div>
-            <div class="klantenservice">
-                <h2>KLANTENSERVICE</h2>
-                <li>Paswoord vergeten</li>
-                <li>Veilige betaling</li>
-                <li>Levering</li>
-                <li>Annuleren, retourneren en</li>
-                <div>ruilen</div>
-            </div>
-            <div class="overons">
-                <h2>OVER ONS</h2>
-                <li>Over ons</li>
-                <li>Contactinformatie</li>
-                <li>Algemene voorwaarden</li>
-                <li>Privacy beleid</li>
-            </div>
-        </div>
-        <div class="copyright">
-            © 1999-2024 supergopnik.com b.v.
-        </div>
-    </footer>
+        </footer>
 
 
 
