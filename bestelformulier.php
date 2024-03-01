@@ -167,7 +167,7 @@
                 Type bestelling:
                 <label><input type="radio" name="type_bestelling"> Particulier</label>
                 <label><input type="radio" name="type_bestelling"> Zakelijk</label>
-                <span class="error">* <?php echo $type_bestellingErr; ?></span>
+                
             </form>
             <div class="block1"></div>
         </div>
@@ -234,72 +234,80 @@
 <?php
 $type_bestellingErr = $aanhefErr = $fnameErr = $postcodeErr = $huisnummerErr = $adresErr = $emailErr = $tellieErr = $gbdErr = $verzendwijzeErr = $nieuwErr = $wachtwoordErr = $bevestigErr = "";
 
+$errors = array(); 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Placeholder validation for demonstration purposes
+    
 
-    // Check Type bestelling
+    
     if (empty($_POST["type_bestelling"])) {
-        $type_bestellingErr = "Type bestelling is required";
+        $errors[] = "Type bestelling is required";
     }
 
-    // Check Aanhef
+    
     if (empty($_POST["aanhef"])) {
-        $aanhefErr = "Aanhef is required";
+        $errors[] = "Aanhef is required";
     }
 
-    // Check Name
+    
     if (empty($_POST["fname"])) {
-        $fnameErr = "Name is required";
+        $errors[] = "Name is required";
     }
 
-    // Check Postcode
+    
     if (empty($_POST["postcode"])) {
-        $postcodeErr = "Postcode is required";
+        $errors[] = "Postcode is required";
     }
 
-    // Check Huisnummer
+    
     if (empty($_POST["huisnummer"])) {
-        $huisnummerErr = "Huisnummer is required";
+        $errors[] = "Huisnummer is required";
     }
 
-    // Check Adres
+    
     if (empty($_POST["adres"])) {
-        $adresErr = "Adres is required";
+        $errors[] = "Adres is required";
     }
 
-    // Check Email
+    
     if (empty($_POST["email"])) {
-        $emailErr = "Email is required";
+        $errors[] = "Email is required";
     }
 
-    // Check Telefoonnummer
+    
     if (empty($_POST["tellie"])) {
-        $tellieErr = "Telefoonnummer is required";
+        $errors[] = "Telefoonnummer is required";
     }
 
-    // Check Geboortedatum
+    
     if (empty($_POST["gbd"])) {
-        $gbdErr = "Geboortedatum is required";
+        $errors[] = "Geboortedatum is required";
     }
 
-    // Check Verzendwijze
-    if (empty($_POST["verzendwijze"])) {
-        $verzendwijzeErr = "Verzendwijze is required";
-    }
-
-    // Check Nieuw
-    if (empty($_POST["nieuw"])) {
-        $nieuwErr = "Nieuw is required";
-    }
-
-    // Check if passwords match
+    
     if ($_POST["wachtwoord"] !== $_POST["bevestig"]) {
-        $wachtwoordErr = "Wachtwoorden komen niet overeen";
+        $errors[] = "Wachtwoorden komen niet overeen";
     }
 
-    // Add more validation and processing logic as needed
+    
 }
 ?>
+
+
+
+<?php
+// Display errors at the top of the page
+if (!empty($errors)) {
+    echo "<div style='color: red;'><strong>Please fix the following errors:</strong><ul>";
+    foreach ($errors as $error) {
+        echo "<li>$error</li>";
+    }
+    echo "</ul></div>";
+}
+?>
+
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">   
+</form>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
