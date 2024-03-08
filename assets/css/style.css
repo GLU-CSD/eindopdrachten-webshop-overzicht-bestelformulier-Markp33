@@ -4,6 +4,8 @@
   font-family: monospace;
 }
 
+
+
 /*Bestelformulier*/
 .bestelformulier {
   display: flex;
@@ -62,12 +64,13 @@ form {
   display: flex;
   justify-content: center;
 }
-.verzendwijze{
+
+.verzendwijze {
   display: flex;
   justify-content: center;
 }
 
-.nieuwsbrief{
+.nieuwsbrief {
   display: flex;
   justify-content: center;
 }
@@ -122,6 +125,25 @@ form {
   margin: 12px 12px;
   cursor: pointer;
   border: none;
+
+  transition: all .2s;
+}
+
+.home:hover,
+.muurdecoratie:hover,
+.doos:hover,
+.opbergers:hover,
+.stools:hover,
+.gadgets:hover {
+  background-color: rgb(79, 0, 143);
+  color: antiquewhite;
+  padding: 15px 12px;
+  text-align: right;
+  display: inline-block;
+  font-size: 20px;
+  margin: 12px 12px;
+  cursor: pointer;
+  border: none;
 }
 
 .info {
@@ -131,13 +153,53 @@ form {
   width: 100%;
 }
 
+/*utopbar*/
 .utopbar {
-  border-bottom: solid;
+
   padding: 20px;
+  width: 0px;
+  height: 25px;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+  animation: mymove 1s infinite;
 
 }
 
 
+
+
+@keyframes mymove {
+  0% {
+    top: 20px;
+    background: rgb(196, 140, 202);
+    width: 20px;
+  }
+
+  25% {
+    top: 20px;
+    background: rgb(64, 49, 65);
+    width: 20px;
+  }
+
+  50% {
+    top: 20px;
+    background: rgb(100, 0, 99);
+    width: 20px;
+  }
+
+  75% {
+    top: 20px;
+    background: rgb(134, 56, 143);
+    width: 20px;
+  }
+
+  100% {
+    top: 20px;
+    background: rgb(230, 0, 255);
+    width: 20px;
+  }
+}
 
 
 /*sidebar*/
@@ -231,6 +293,18 @@ ul {
   color: #AAA;
   margin-top: 70px;
   height: 375px;
+}
+
+.box:hover {
+  background: #6e6e6e;
+  border: 10px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+  margin-top: 70px;
+  height: 400px;
+  transition: 0.35s;
 }
 
 .square {
