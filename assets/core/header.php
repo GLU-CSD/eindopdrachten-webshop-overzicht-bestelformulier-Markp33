@@ -1,28 +1,4 @@
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SuperGopnik</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-  <script src="./assets/js/app.js" defer></script>
-</head>
-
-<body>
   
   <header>
     <div class="topbar">
@@ -62,4 +38,4 @@
       <a href="./hightech.html"><button class="stools">Hightech</button></a>
       <a href="./gadgets.html"><button class="gadgets">Gadgets</button></a>
     </div>
-    </html>
+  </header>
