@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +28,8 @@
   <?php include_once("assets/core/header.php"); ?>
   
 <!-- sidebar -->
-    <div>
+    
+<div>
       <div class="maincontent">
         <div class="kleindoosje">
           <h2>Aanstekers</h2>
@@ -78,20 +78,21 @@
           </div>
         </div>
 
-        <div class="kleindoosje">
-          <h2>Nieuwsbrief</h2>
-          <button>
-            <a href="./bestelformulier.php">bestelformulier</a>
-          </button>
-          <input type="search" id="site-search" name="q" />
-        </div>
-        
+<div class="newsletter">
+  <h2>Subscribe to Our Newsletter</h2>
+  <form action="./bestelformulier.php" method="get">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+
 
         <div class="kleindoosje">
           <h2>OVER ONS</h2>
           <hr>
           <h3>About Us: YourBox Solutions
-
             Welcome to YourBox Solutions, where innovation meets packaging excellence! Established in 2010, YourBox
             Solutions has rapidly become a leading player in the packaging industry, dedicated to providing top-notch
             boxes tailored to meet the diverse needs of our valued customers.
@@ -101,7 +102,6 @@
             strive to offer not just boxes but solutions that enhance your product presentation, protection, and overall
             brand image. We believe in the power of packaging to make a lasting impression, and we are committed to
             helping your brand stand out in the market.
-
           </h3>
         </div>
 
@@ -115,10 +115,21 @@
         </div>
       </div>
 <!-- mainboxes -->
-      
-    
-<!-- footer -->
-    
-   
+      <div class="main">
+        <?php 
+        include_once("products.php");
+        foreach ($products as $product){
+          $price = $product["price"];
+          $korting = $product["discount"];
+          include("./assets/core/product.php");
+        }
+        
+        ?>
+
+    </div>
+
+<?php include_once("assets/core/footer.php"); ?>
+
 </body>
+
 
