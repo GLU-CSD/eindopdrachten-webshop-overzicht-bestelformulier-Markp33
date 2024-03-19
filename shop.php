@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SuperGopnik</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="description" content="">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SuperGopnik</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+    <script src="./assets/js/app.js" defer></script>
+  </head>
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-  <script src="./assets/js/app.js" defer></script>
-</head>
-
-<body>
-
-  <?php include_once("assets/core/header.php"); ?>
-  
-<!-- sidebar -->
+  <body>
+    <?php include_once("assets/core/header.php"); ?>
     
-<div>
+    <!-- sidebar -->
+
+    <div>
       <div class="maincontent">
         <div class="kleindoosje">
           <h2>Aanstekers</h2>
@@ -78,17 +76,15 @@
           </div>
         </div>
 
-<div class="newsletter">
-  <h2>Subscribe to Our Newsletter</h2>
-  <form action="./bestelformulier.php" method="get">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <button type="submit">Subscribe</button>
-  </form>
-</div>
-
-
-
+        <div class="newsletter">
+          <h2>Subscribe to Our Newsletter</h2>
+          <form action="./bestelformulier.php" method="get">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        
         <div class="kleindoosje">
           <h2>OVER ONS</h2>
           <hr>
@@ -106,30 +102,29 @@
         </div>
 
       </div>
-
-
-
-      <div>
-        <hr class="utopbar">
-        <div class="animations">
-        </div>
-      </div>
-<!-- mainboxes -->
-      <div class="main">
-        <?php 
-        include_once("products.php");
-        foreach ($products as $product){
-          $price = $product["price"];
-          $korting = $product["discount"];
-          include("./assets/core/product.php");
-        }
-        
-        ?>
-
+    </div>
+      
+  
     </div>
 
-<?php include_once("assets/core/footer.php"); ?>
 
-</body>
+
+    <!-- mainboxes -->
+
+    <div class="main">
+      <?php 
+        include_once("products.php");
+
+          foreach ($products as $product){
+            include("./assets/core/product.php");
+          }
+        
+        ?>
+    </div>
+
+    <?php include_once("assets/core/footer.php"); ?>
+
+  </body>
+</html>
 
 

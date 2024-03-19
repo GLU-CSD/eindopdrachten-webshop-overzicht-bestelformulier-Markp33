@@ -1,10 +1,10 @@
 <?php
 $products = [
     [
-        "name" => "Aansteker",
+        "name" => "Lighter",
         "link" => "https://www.amazon.nl/herbruikbare-winddichte-sigarettenaansteker-aanstekers-nieuwigheid/dp/B09MPGG3XC",
         "price" => "€ 20,95",
-        "discount" => "€ 19,95",
+        
         "imageSrc" => "./assets/img/aansteker1.jpg",
         "alt" => "aansteker1"
     ],
@@ -71,6 +71,7 @@ $products = [
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker9.jpg",
         "alt" => "aansteker6"
-    ]
+    ],
 ];
+
 ?>

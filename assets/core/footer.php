@@ -11,34 +11,34 @@
 <footer>
     <div class="info">
         <div class="veiligbetalen">
-            <h2>VEILIG BETALEN</h2>
+            <h2>SECURE PAYMENT</h2>
             <ul>
-                <li>Betaal in alle veiligheid</li>
-                <li>met onze partners</li>
+                <li>Pay securely</li>
+                <li>with our partners</li>
             </ul>
         </div>
         <div class="leveringkosten">
-            <h2>LEVERING KOSTEN</h2>
+            <h2>DELIVERY COSTS</h2>
             <ul>
-                <li>Transport tarieven</li>
+                <li>Transport rates</li>
             </ul>
         </div>
         <div class="klantenservice">
-            <h2>KLANTENSERVICE</h2>
-            <ul>↩
-                <li><a href="#forgot-password">Wachtwoord vergeten</a></li>
-                <li><a href="#secure-payment">Veilige betaling</a></li>
-                <li><a href="#delivery">Levering</a></li>
-                <li><a href="#cancel-return-exchange">Annuleren, retourneren en ruilen</a></li>
+            <h2>CUSTOMER SERVICE</h2>
+            <ul>
+                <li><a href="#forgot-password">Forgot password</a></li>
+                <li><a href="#secure-payment">Secure payment</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#cancel-return-exchange">Cancel, return, and exchange</a></li>
             </ul>
         </div>
         <div class="overons">
-            <h2>OVER ONS</h2>
-            <ul>↩
-                <li>Over ons</li>
-                <li>Contactinformatie</li>
-                <li>Algemene voorwaarden</li>
-                <li>Privacy beleid</li>
+            <h2>ABOUT US</h2>
+            <ul>
+                <li>About us</li>
+                <li>Contact information</li>
+                <li>Terms and conditions</li>
+                <li>Privacy policy</li>
             </ul>
         </div>
     </div>

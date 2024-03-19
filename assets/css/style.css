@@ -250,14 +250,14 @@ ul {
 .image {
   width: 320px;
   height: 200px;
+  
 }
 
 .cdtext {
   position: absolute;
-  margin-top: 200px;
+  margin-top: 20px;
   font-size: 30px;
-  margin-right: 180px;
-
+  margin-left: 10px;
 }
 
 .recentblock {
