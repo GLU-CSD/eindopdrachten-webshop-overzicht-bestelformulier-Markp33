@@ -23,7 +23,7 @@ foreach ($products as $curr_product){
 <?php include_once("assets/core/header.php"); ?>
 
 <div class="imgBlock-flex">
-    <div class="imgBlock"></div>
+    <div class="imgBlock"><?php echo $product["imageSrc"]?></div>
     <div class="infoBlock">
         <div class="title"><?php echo $product["name"]?></div>
         <div class="little-img-flex">

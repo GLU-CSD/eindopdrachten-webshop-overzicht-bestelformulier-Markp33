@@ -10,7 +10,7 @@ $products = [
     ],
     [
         "name" => "Gasbrander",
-        "info" => "dsfsdv",
+        "info" => "Gasbrander van aliexpress",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker2.jpg",
@@ -19,7 +19,7 @@ $products = [
     ],
     [
         "name" => "Gasbrander",
-        "info" => "dsfsdv","price" => "€ 20,95",
+        "info" => "Mooie gasbrander","price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker3.jpg",
         "alt" => "aansteker3",
@@ -27,7 +27,7 @@ $products = [
     ],
     [
         "name" => "Gasbrander",
-        "info" => "dsfsdv","price" => "€ 20,95",
+        "info" => "Nog een gasbrander!","price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker4.jpg",
         "alt" => "aansteker4",
@@ -35,7 +35,7 @@ $products = [
     ],
     [
         "name" => "Gasbrander",
-        "info" => "dsfsdv",
+        "info" => "Beste gasbrander van allemaal",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker5.jpg",
@@ -44,7 +44,7 @@ $products = [
     ],
     [
         "name" => "Gasbrander",
-        "info" => "dsfsdv",
+        "info" => "Super mooie gasbrander",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker6.jpg",
@@ -53,7 +53,7 @@ $products = [
     ],
     [
         "name" => "Lightsaber",
-        "info" => "dsfsdv",
+        "info" => "Een lightsaber uit Star Wars!",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker7.jpg",
@@ -62,7 +62,7 @@ $products = [
     ],
     [
         "name" => "Outdoor",
-        "info" => "dsfsdv",
+        "info" => "Perfecte aansteker voor outdoor activities",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker8.jpg",
@@ -71,7 +71,7 @@ $products = [
     ],
     [
         "name" => "Kerosine",
-        "info" => "dsfsdv",
+        "info" => "Kerosine aansteker lang durig",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker9.jpg",
