@@ -229,7 +229,15 @@ form {
 ul {
   list-style-position: inside;
 }
+/*productinfo*/
+.productinfo{
+  display: flex;
+  justify-content: center;
+} 
 
+.producttitle{
+  font-size: 20px;
+}
 
 /*maincontent*/
 

@@ -2,75 +2,81 @@
 $products = [
     [
         "name" => "Lighter",
-        "link" => "https://www.amazon.nl/herbruikbare-winddichte-sigarettenaansteker-aanstekers-nieuwigheid/dp/B09MPGG3XC",
-        "price" => "€ 20,95",
-        
+        "price" => "€ 10,95",
         "imageSrc" => "./assets/img/aansteker1.jpg",
-        "alt" => "aansteker1"
+        "alt" => "aansteker1",
+        "info" => "Vanitage lighter of 1899",
+        "id" => "85726cab-bc91-4758-b24f-398ef8dc978b"
     ],
     [
         "name" => "Gasbrander",
-        "link" => "https://nl.aliexpress.com/item/1005003916321070.html",
+        "info" => "dsfsdv",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker2.jpg",
-        "alt" => "aansteker2"
+        "alt" => "aansteker2",
+        "id" => "9e55901d-c4f2-44c5-9ed0-4a9cb4e335f0"
     ],
     [
         "name" => "Gasbrander",
-        "link" => "https://nl.aliexpress.com/item/1005005868242888.html?spm=a2g0o.productlist.main.3.13317b9bqMhwLy&algo_pvid=cc9bfd02-463a-4496-93e8-c310d0b72607&aem_p4p_detail=2024021301420810975140528397500008780635&algo_exp_id=cc9bfd02-463a-4496-93e8-c310d0b72607-1&pdp_npi=4%40dis%21EUR%2131.58%2110.09%21%21%2133.21%2110.61%21%40211b617a17078173286147678e1442%2112000034651274454%21sea%21NL%210%21AB&curPageLogUid=0cDUqjH5crIy&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=2024021301420810975140528397500008780635_2",
-        "price" => "€ 20,95",
+        "info" => "dsfsdv","price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker3.jpg",
-        "alt" => "aansteker3"
+        "alt" => "aansteker3",
+        "id" => "d8f8d1fb-65db-4202-be88-83744327d35f"
     ],
     [
         "name" => "Gasbrander",
-        "link" => "https://nl.aliexpress.com/item/1005006526019266.html?spm=a2g0o.productlist.main.15.13317b9bqMhwLy&algo_pvid=cc9bfd02-463a-4496-93e8-c310d0b72607&aem_p4p_detail=2024021301420810975140528397500008780635&algo_exp_id=cc9bfd02-463a-4496-93e8-c310d0b72607-7&pdp_npi=4%40dis%21EUR%218.20%218.20%21%21%218.62%218.62%21%40211b617a17078173286147678e1442%2112000037531529875%21sea%21NL%210%21AB&curPageLogUid=fWZoGxVwVGWA&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=2024021301420810975140528397500008780635_8",
-        "price" => "€ 20,95",
+        "info" => "dsfsdv","price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker4.jpg",
-        "alt" => "aansteker4"
+        "alt" => "aansteker4",
+        "id" => "dc3ba79d-fa86-45f6-8a3a-d3c668f42b12"
     ],
     [
         "name" => "Gasbrander",
-        "link" => "https://nl.aliexpress.com/item/32799589607.html?spm=a2g0o.productlist.main.19.59f77b9bHNkBSD&algo_pvid=7e7ed439-3752-4d80-82c1-7811561d1fa4&algo_exp_id=7e7ed439-3752-4d80-82c1-7811561d1fa4-9&pdp_npi=4%40dis%21EUR%2116.42%2111.67%21%21%2117.27%2112.27%21%40211b446117078183841963459eceb1%2112000023256801564%21sea%21NL%210%21AB&curPageLogUid=axpWs7EspFrZ&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        "info" => "dsfsdv",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker5.jpg",
-        "alt" => "aansteker5"
+        "alt" => "aansteker5",
+        "id" => "cb70f33c-472b-4193-acaa-9044d5579490"
     ],
     [
         "name" => "Gasbrander",
-        "link" => "https://nl.aliexpress.com/item/1005003495701651.html?spm=a2g0o.productlist.main.21.59f77b9bHNkBSD&algo_pvid=7e7ed439-3752-4d80-82c1-7811561d1fa4&algo_exp_id=7e7ed439-3752-4d80-82c1-7811561d1fa4-10&pdp_npi=4%40dis%21EUR%2121.50%219.23%21%21%2122.61%219.70%21%40211b446117078183841963459eceb1%2112000026051692066%21sea%21NL%210%21AB&curPageLogUid=yEijFYHpiUGf&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        "info" => "dsfsdv",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker6.jpg",
-        "alt" => "aansteker6"
+        "alt" => "aansteker6",
+        "id" => "831de19e-1f11-43f7-9b24-f9679ba2a6b1"
     ],
     [
         "name" => "Lightsaber",
-        "link" => "https://nl.aliexpress.com/item/1005006199967838.html?spm=a2g0o.productlist.main.39.59f77b9bHNkBSD&algo_pvid=7e7ed439-3752-4d80-82c1-7811561d1fa4&algo_exp_id=7e7ed439-3752-4d80-82c1-7811561d1fa4-19&pdp_npi=4%40dis%21EUR%2142.97%2112.14%21%21%21326.02%2192.10%21%40211b446117078183841963459eceb1%2112000036239472906%21sea%21NL%210%21AB&curPageLogUid=6VnvMAiiuy5r&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        "info" => "dsfsdv",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker7.jpg",
-        "alt" => "aansteker6"
+        "alt" => "aansteker6",
+        "id" => "6e0dbad3-ba5f-422b-bcfc-5927caf85955"
     ],
     [
         "name" => "Outdoor",
-        "link" => "https://nl.aliexpress.com/item/1005006187639128.html?spm=a2g0o.productlist.main.43.59f77b9bHNkBSD&algo_pvid=7e7ed439-3752-4d80-82c1-7811561d1fa4&algo_exp_id=7e7ed439-3752-4d80-82c1-7811561d1fa4-21&pdp_npi=4%40dis%21EUR%2127.55%218.24%21%21%2128.97%218.67%21%40211b446117078183841963459eceb1%2112000036189065325%21sea%21NL%210%21AB&curPageLogUid=N3HHDtMI1N5M&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        "info" => "dsfsdv",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker8.jpg",
-        "alt" => "aansteker6"
+        "alt" => "aansteker6",
+        "id" => "249c0fef-2506-4763-99e1-9306f97bfafe"
     ],
     [
         "name" => "Kerosine",
-        "link" => "https://nl.aliexpress.com/item/1005005591554949.html?spm=a2g0o.productlist.main.93.59f77b9bHNkBSD&algo_pvid=7e7ed439-3752-4d80-82c1-7811561d1fa4&algo_exp_id=7e7ed439-3752-4d80-82c1-7811561d1fa4-46&pdp_npi=4%40dis%21EUR%2120.33%214.40%21%21%21154.24%2133.37%21%40211b446117078183841963459eceb1%2112000033670901006%21sea%21NL%210%21AB&curPageLogUid=O0Ag7mfnPjRU&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        "info" => "dsfsdv",
         "price" => "€ 20,95",
         "discount" => "€ 19,95",
         "imageSrc" => "./assets/img/aansteker9.jpg",
-        "alt" => "aansteker6"
+        "alt" => "aansteker6",
+        "id" => "1422a806-3f88-4a24-ad35-1a2d1df66541"
     ],
 ];
 
