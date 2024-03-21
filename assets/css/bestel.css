@@ -1,17 +1,18 @@
 body{
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .imgBlock-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .imgBlock{
     background-color: rgb(216, 216, 216);
     width: 600px;
     height: 500px;
     margin-left: 120px;
-  margin-bottom: 200px;
+    margin-bottom: 200px;
 }
 .infoBlock{
     background-color: rgb(177, 177, 177);
@@ -45,6 +46,10 @@ body{
     margin-left: 35px;
 
 
+}
+.lilimg, .lilimg1, .lilimg2{
+    width: 100%;
+    height: 100%;
 }
 .orderBtn{
     display: inline-block;
